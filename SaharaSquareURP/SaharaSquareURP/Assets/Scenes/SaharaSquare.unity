@@ -975,6 +975,195 @@ Transform:
   m_Father: {fileID: 1521397835}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &28147273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28147278}
+  - component: {fileID: 28147277}
+  - component: {fileID: 28147276}
+  - component: {fileID: 28147275}
+  - component: {fileID: 28147274}
+  m_Layer: 16
+  m_Name: car 14 audio trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &28147274
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28147273}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0cb191e3bcc8a4c46b520cd4864ec2c2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!54 &28147275
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28147273}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &28147276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28147273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff57b217dfb0b0448fb25ef681d0686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 28147274}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &28147277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28147273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &28147278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28147273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11948168, y: 0.17669094, z: -7.5961037}
+  m_LocalScale: {x: 1.4508257, y: 1.4508257, z: 1.4508257}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28580924
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +1175,7 @@ GameObject:
   - component: {fileID: 28580925}
   - component: {fileID: 28580927}
   - component: {fileID: 28580926}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_wiper_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1721,7 @@ GameObject:
   - component: {fileID: 60036400}
   - component: {fileID: 60036402}
   - component: {fileID: 60036401}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_side_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +2126,7 @@ GameObject:
   - component: {fileID: 74606420}
   - component: {fileID: 74606422}
   - component: {fileID: 74606421}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2259,6 +2448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104432839}
+  - component: {fileID: 104432840}
   m_Layer: 18
   m_Name: Car_9_grp
   m_TagString: Untagged
@@ -2294,6 +2484,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0.888, z: 0}
+--- !u!65 &104432840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104432838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &109969751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109969752}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_side_mirrors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2681,7 +2884,7 @@ GameObject:
   - component: {fileID: 163506122}
   - component: {fileID: 163506124}
   - component: {fileID: 163506123}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tire_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2886,7 +3089,7 @@ GameObject:
   - component: {fileID: 178039834}
   - component: {fileID: 178039836}
   - component: {fileID: 178039835}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_side_mirror_handle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +3170,7 @@ GameObject:
   - component: {fileID: 190409830}
   - component: {fileID: 190409832}
   - component: {fileID: 190409831}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_side_mirror_handle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3163,6 +3366,7 @@ GameObject:
   - component: {fileID: 201312489}
   - component: {fileID: 201312487}
   - component: {fileID: 201312488}
+  - component: {fileID: 201312490}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: Untagged
@@ -3201,7 +3405,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3838603575
+    m_Bits: 4107239223
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3260,6 +3464,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &201312490
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201312486}
+  m_Enabled: 1
 --- !u!1 &203995754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,7 +3564,7 @@ GameObject:
   - component: {fileID: 216953397}
   - component: {fileID: 216953399}
   - component: {fileID: 216953398}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3431,7 +3643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218695261}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tail_lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3454,6 +3666,195 @@ Transform:
   m_Father: {fileID: 1442462696}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &243197580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243197583}
+  - component: {fileID: 243197582}
+  - component: {fileID: 243197581}
+  - component: {fileID: 243197584}
+  - component: {fileID: 243197585}
+  m_Layer: 19
+  m_Name: Giraffe car audio trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &243197581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243197580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff57b217dfb0b0448fb25ef681d0686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 243197585}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &243197582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243197580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &243197583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243197580}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3494816, y: 1.1666908, z: 17.524897}
+  m_LocalScale: {x: 1.4508257, y: 1.4508257, z: 1.4508257}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &243197584
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243197580}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!82 &243197585
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243197580}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0cb191e3bcc8a4c46b520cd4864ec2c2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &266777944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,7 +3867,7 @@ GameObject:
   - component: {fileID: 266777947}
   - component: {fileID: 266777946}
   - component: {fileID: 266777948}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_care_tire_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 282194870}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tail_lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3711,7 +4112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284991286}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_side_mirrors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3748,7 +4149,7 @@ GameObject:
   - component: {fileID: 286864778}
   - component: {fileID: 286864777}
   - component: {fileID: 286864779}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_care_tire_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3848,7 +4249,7 @@ GameObject:
   - component: {fileID: 294053371}
   - component: {fileID: 294053373}
   - component: {fileID: 294053372}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tire_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3928,7 +4329,8 @@ GameObject:
   m_Component:
   - component: {fileID: 297368594}
   - component: {fileID: 297368595}
-  m_Layer: 18
+  - component: {fileID: 297368596}
+  m_Layer: 10
   m_Name: Car_9_grp animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3982,6 +4384,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &297368596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297368593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &301640553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,7 +4732,7 @@ GameObject:
   - component: {fileID: 327810624}
   - component: {fileID: 327810626}
   - component: {fileID: 327810625}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,7 +4813,7 @@ GameObject:
   - component: {fileID: 337560522}
   - component: {fileID: 337560524}
   - component: {fileID: 337560523}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_side_mirror_handle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4534,7 +4949,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1145856055
+    m_Bits: 1146056247
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -4814,7 +5229,7 @@ GameObject:
   - component: {fileID: 370292103}
   - component: {fileID: 370292105}
   - component: {fileID: 370292104}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_side_mirror_handle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5013,7 +5428,7 @@ GameObject:
   - component: {fileID: 399193358}
   - component: {fileID: 399193360}
   - component: {fileID: 399193359}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5987,7 +6402,7 @@ GameObject:
   - component: {fileID: 421343907}
   - component: {fileID: 421343909}
   - component: {fileID: 421343908}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_tire_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6872,7 +7287,7 @@ GameObject:
   - component: {fileID: 447017950}
   - component: {fileID: 447017952}
   - component: {fileID: 447017951}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7008,7 +7423,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1145843767
+    m_Bits: 1146043959
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -7044,7 +7459,8 @@ GameObject:
   m_Component:
   - component: {fileID: 450175324}
   - component: {fileID: 450175325}
-  m_Layer: 18
+  - component: {fileID: 450175326}
+  m_Layer: 16
   m_Name: Car_14_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7089,6 +7505,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &450175326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450175323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &458361737
 GameObject:
   m_ObjectHideFlags: 0
@@ -7668,7 +8097,7 @@ GameObject:
   - component: {fileID: 503076866}
   - component: {fileID: 503076868}
   - component: {fileID: 503076867}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8075,6 +8504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 515233224}
+  - component: {fileID: 515233225}
   m_Layer: 18
   m_Name: Car_4_grp
   m_TagString: Untagged
@@ -8106,6 +8536,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &515233225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515233223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &517528924
 GameObject:
   m_ObjectHideFlags: 0
@@ -8198,7 +8641,7 @@ GameObject:
   - component: {fileID: 519124148}
   - component: {fileID: 519124150}
   - component: {fileID: 519124149}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_headlight_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8639,7 +9082,7 @@ GameObject:
   - component: {fileID: 555545634}
   - component: {fileID: 555545636}
   - component: {fileID: 555545635}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_side_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8718,7 +9161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 559741599}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_mirror_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8753,7 +9196,7 @@ GameObject:
   - component: {fileID: 569571625}
   - component: {fileID: 569571627}
   - component: {fileID: 569571626}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_side_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9052,7 +9495,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1154244919
+    m_Bits: 1154445111
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -9170,7 +9613,7 @@ GameObject:
   - component: {fileID: 601606979}
   - component: {fileID: 601606981}
   - component: {fileID: 601606980}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tail_light_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9251,7 +9694,7 @@ GameObject:
   - component: {fileID: 612063701}
   - component: {fileID: 612063703}
   - component: {fileID: 612063702}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tail_light_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9561,6 +10004,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623296956}
   m_Mesh: {fileID: -538654745522215155, guid: 20480926a5987704fa102a480f07fe49, type: 3}
+--- !u!1 &625068722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625068723}
+  m_Layer: 0
+  m_Name: audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &625068723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625068722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2294817, y: -1.3666909, z: -38.633896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 710023187}
+  - {fileID: 965636851}
+  - {fileID: 243197583}
+  - {fileID: 1959497904}
+  - {fileID: 879628937}
+  - {fileID: 28147278}
+  - {fileID: 1769024376}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627898695
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,7 +10295,7 @@ GameObject:
   - component: {fileID: 637108776}
   - component: {fileID: 637108778}
   - component: {fileID: 637108777}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_car_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9896,7 +10376,7 @@ GameObject:
   - component: {fileID: 638630612}
   - component: {fileID: 638630614}
   - component: {fileID: 638630613}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_side_mirror_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9977,7 +10457,7 @@ GameObject:
   - component: {fileID: 642696975}
   - component: {fileID: 642696977}
   - component: {fileID: 642696976}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_side_mirror_holder_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10148,7 +10628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659216058}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10427,7 +10907,7 @@ GameObject:
   - component: {fileID: 680954784}
   - component: {fileID: 680954786}
   - component: {fileID: 680954785}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tire_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10802,6 +11282,133 @@ Transform:
   - {fileID: 1518734254}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &710023185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710023187}
+  - component: {fileID: 710023186}
+  m_Layer: 0
+  m_Name: Sand storm audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &710023186
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710023185}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4fdf95379bf019b4283578aa50b77e25, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.084
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &710023187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710023185}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.354959, y: 6.82545, z: 41.039936}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730442888
 GameObject:
@@ -11355,7 +11962,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3838599223
+    m_Bits: 3838799415
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -11745,7 +12352,7 @@ GameObject:
   - component: {fileID: 793967113}
   - component: {fileID: 793967115}
   - component: {fileID: 793967114}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_bumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11826,7 +12433,7 @@ GameObject:
   - component: {fileID: 808968308}
   - component: {fileID: 808968310}
   - component: {fileID: 808968309}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_wiper_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11941,7 +12548,7 @@ GameObject:
   - component: {fileID: 811940477}
   - component: {fileID: 811940479}
   - component: {fileID: 811940478}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_side_mirror_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12022,7 +12629,7 @@ GameObject:
   - component: {fileID: 812030893}
   - component: {fileID: 812030895}
   - component: {fileID: 812030894}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tail_light_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12931,7 +13538,7 @@ GameObject:
   - component: {fileID: 861565434}
   - component: {fileID: 861565436}
   - component: {fileID: 861565435}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tail_light_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13325,6 +13932,195 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879560864}
   m_Mesh: {fileID: 3735948037476663568, guid: 20480926a5987704fa102a480f07fe49, type: 3}
+--- !u!1 &879628933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879628937}
+  - component: {fileID: 879628936}
+  - component: {fileID: 879628935}
+  - component: {fileID: 879628934}
+  - component: {fileID: 879628938}
+  m_Layer: 11
+  m_Name: car 15 audio trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &879628934
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879628933}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &879628935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879628933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff57b217dfb0b0448fb25ef681d0686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 879628938}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &879628936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879628933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &879628937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879628933}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3494816, y: 1.1666908, z: 17.524897}
+  m_LocalScale: {x: 1.4508257, y: 1.4508257, z: 1.4508257}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &879628938
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879628933}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0cb191e3bcc8a4c46b520cd4864ec2c2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &888300326
 GameObject:
   m_ObjectHideFlags: 0
@@ -13415,7 +14211,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893819490}
-  m_Layer: 18
+  - component: {fileID: 893819491}
+  m_Layer: 16
   m_Name: Car_16_Grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13445,6 +14242,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &893819491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893819489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &898242908
 GameObject:
   m_ObjectHideFlags: 0
@@ -13454,6 +14264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898242909}
+  - component: {fileID: 898242910}
   m_Layer: 18
   m_Name: Car_11_grp
   m_TagString: Untagged
@@ -13482,6 +14293,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &898242910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898242908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &908739380
 GameObject:
   m_ObjectHideFlags: 0
@@ -13760,7 +14584,7 @@ GameObject:
   - component: {fileID: 928286845}
   - component: {fileID: 928286847}
   - component: {fileID: 928286846}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tail_light_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14000,7 +14824,7 @@ GameObject:
   - component: {fileID: 959876220}
   - component: {fileID: 959876222}
   - component: {fileID: 959876221}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_side_mirror_handle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14081,7 +14905,7 @@ GameObject:
   - component: {fileID: 964840958}
   - component: {fileID: 964840960}
   - component: {fileID: 964840959}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_side_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14232,6 +15056,133 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965135072}
   m_Mesh: {fileID: 5529019052537540106, guid: 20480926a5987704fa102a480f07fe49, type: 3}
+--- !u!1 &965636849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965636851}
+  - component: {fileID: 965636850}
+  m_Layer: 0
+  m_Name: Tree rustle audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &965636850
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965636849}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7034265f31532914291fac5942e74d74, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.824
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &965636851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965636849}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.354959, y: 6.82545, z: 41.039936}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968492699
 GameObject:
   m_ObjectHideFlags: 0
@@ -15090,6 +16041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986152492}
+  - component: {fileID: 986152493}
   m_Layer: 18
   m_Name: Car_10_Grp
   m_TagString: Untagged
@@ -15119,6 +16071,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &986152493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986152491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &995267628
 GameObject:
   m_ObjectHideFlags: 0
@@ -15130,7 +16095,7 @@ GameObject:
   - component: {fileID: 995267629}
   - component: {fileID: 995267631}
   - component: {fileID: 995267630}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_wiper_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15211,7 +16176,7 @@ GameObject:
   - component: {fileID: 995958011}
   - component: {fileID: 995958013}
   - component: {fileID: 995958012}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_side_mirror_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15548,7 +16513,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3301732663
+    m_Bits: 3301932855
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -15667,7 +16632,7 @@ GameObject:
   - component: {fileID: 1035603394}
   - component: {fileID: 1035603396}
   - component: {fileID: 1035603395}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15748,7 +16713,7 @@ GameObject:
   - component: {fileID: 1035874270}
   - component: {fileID: 1035874272}
   - component: {fileID: 1035874271}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tire_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16067,7 +17032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1056772353}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16103,7 +17068,7 @@ GameObject:
   - component: {fileID: 1057033199}
   - component: {fileID: 1057033201}
   - component: {fileID: 1057033200}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tail_light_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16265,7 +17230,7 @@ GameObject:
   - component: {fileID: 1064915059}
   - component: {fileID: 1064915061}
   - component: {fileID: 1064915060}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_side_mirror_handle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16589,7 +17554,7 @@ GameObject:
   - component: {fileID: 1089227374}
   - component: {fileID: 1089227376}
   - component: {fileID: 1089227375}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17120,7 +18085,7 @@ GameObject:
   - component: {fileID: 1169403538}
   - component: {fileID: 1169403540}
   - component: {fileID: 1169403539}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17199,6 +18164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1180571956}
+  - component: {fileID: 1180571957}
   m_Layer: 18
   m_Name: Car_8
   m_TagString: Untagged
@@ -17228,6 +18194,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1180571957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180571955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1181761998
 GameObject:
   m_ObjectHideFlags: 0
@@ -17239,7 +18218,7 @@ GameObject:
   - component: {fileID: 1181761999}
   - component: {fileID: 1181762001}
   - component: {fileID: 1181762000}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_side_mirror_handle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17320,7 +18299,7 @@ GameObject:
   - component: {fileID: 1199322121}
   - component: {fileID: 1199322123}
   - component: {fileID: 1199322122}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_side_mirror_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18441,7 +19420,7 @@ GameObject:
   - component: {fileID: 1230616618}
   - component: {fileID: 1230616620}
   - component: {fileID: 1230616619}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_wiper_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19008,7 +19987,7 @@ GameObject:
   - component: {fileID: 1275568755}
   - component: {fileID: 1275568757}
   - component: {fileID: 1275568756}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_bumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19291,7 +20270,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1154244663
+    m_Bits: 1154444855
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -19770,6 +20749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340653177}
+  - component: {fileID: 1340653178}
   m_Layer: 18
   m_Name: Car_13_grp
   m_TagString: Untagged
@@ -19801,6 +20781,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1340653178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340653176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1347490449
 GameObject:
   m_ObjectHideFlags: 0
@@ -20862,7 +21855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1376461384}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_side_mirrors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26366,7 +27359,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1442462696}
   - component: {fileID: 1442462697}
-  m_Layer: 18
+  - component: {fileID: 1442462698}
+  m_Layer: 11
   m_Name: Car_15_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26412,6 +27406,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1442462698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442462695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1444061101
 GameObject:
   m_ObjectHideFlags: 0
@@ -26596,7 +27603,7 @@ GameObject:
   - component: {fileID: 1455252850}
   - component: {fileID: 1455252852}
   - component: {fileID: 1455252851}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_side_mirror_holder_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27310,7 +28317,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1505921089}
   - component: {fileID: 1505921090}
-  m_Layer: 18
+  - component: {fileID: 1505921091}
+  m_Layer: 17
   m_Name: Car_5_Grp animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27358,6 +28366,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1505921091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505921088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.04}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1508294627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27873,6 +28894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521397835}
+  - component: {fileID: 1521397836}
   m_Layer: 18
   m_Name: Car_6_grp
   m_TagString: Untagged
@@ -27899,6 +28921,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1521397836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521397834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1526247817
 GameObject:
   m_ObjectHideFlags: 0
@@ -27910,7 +28945,7 @@ GameObject:
   - component: {fileID: 1526247818}
   - component: {fileID: 1526247820}
   - component: {fileID: 1526247819}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28072,7 +29107,7 @@ GameObject:
   - component: {fileID: 1539942367}
   - component: {fileID: 1539942369}
   - component: {fileID: 1539942368}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_side_mirror_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28153,7 +29188,7 @@ GameObject:
   - component: {fileID: 1543642935}
   - component: {fileID: 1543642937}
   - component: {fileID: 1543642936}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29127,7 +30162,7 @@ GameObject:
   - component: {fileID: 1568578272}
   - component: {fileID: 1568578274}
   - component: {fileID: 1568578273}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_side_mirror_handle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29208,7 +30243,7 @@ GameObject:
   - component: {fileID: 1577538550}
   - component: {fileID: 1577538552}
   - component: {fileID: 1577538551}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29289,7 +30324,7 @@ GameObject:
   - component: {fileID: 1586070793}
   - component: {fileID: 1586070795}
   - component: {fileID: 1586070794}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29371,7 +30406,7 @@ GameObject:
   - component: {fileID: 1590293298}
   - component: {fileID: 1590293297}
   - component: {fileID: 1590293299}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_care_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30228,7 +31263,7 @@ GameObject:
   - component: {fileID: 1613277847}
   - component: {fileID: 1613277849}
   - component: {fileID: 1613277848}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30308,7 +31343,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1622257162}
   - component: {fileID: 1622257163}
-  m_Layer: 18
+  - component: {fileID: 1622257164}
+  m_Layer: 19
   m_Name: Giraffe_car_grp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30354,6 +31390,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1622257164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622257161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.36, z: 1.83}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1626787294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30643,6 +31692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653328025}
+  - component: {fileID: 1653328026}
   m_Layer: 18
   m_Name: Car_3_grp
   m_TagString: Untagged
@@ -30672,6 +31722,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1653328026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653328024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1658657440
 GameObject:
   m_ObjectHideFlags: 0
@@ -30764,7 +31827,7 @@ GameObject:
   - component: {fileID: 1660560599}
   - component: {fileID: 1660560601}
   - component: {fileID: 1660560600}
-  m_Layer: 18
+  m_Layer: 10
   m_Name: Car_9_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30926,7 +31989,7 @@ GameObject:
   - component: {fileID: 1673932916}
   - component: {fileID: 1673932918}
   - component: {fileID: 1673932917}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31088,7 +32151,7 @@ GameObject:
   - component: {fileID: 1716730633}
   - component: {fileID: 1716730635}
   - component: {fileID: 1716730634}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_bumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31167,7 +32230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1727053757}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_wipers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31403,6 +32466,195 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1769024371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769024376}
+  - component: {fileID: 1769024375}
+  - component: {fileID: 1769024374}
+  - component: {fileID: 1769024373}
+  - component: {fileID: 1769024372}
+  m_Layer: 10
+  m_Name: car 9 audio trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1769024372
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769024371}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0cb191e3bcc8a4c46b520cd4864ec2c2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!54 &1769024373
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769024371}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1769024374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769024371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff57b217dfb0b0448fb25ef681d0686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1769024372}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1769024375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769024371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1769024376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769024371}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11948168, y: 0.17669082, z: -7.5961037}
+  m_LocalScale: {x: 1.4508257, y: 1.4508257, z: 1.4508257}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776901797
 GameObject:
   m_ObjectHideFlags: 0
@@ -31412,6 +32664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776901798}
+  - component: {fileID: 1776901799}
   m_Layer: 18
   m_Name: Car_2_grp
   m_TagString: Untagged
@@ -31439,6 +32692,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -1.06, y: -0.149, z: -0.016}
+--- !u!65 &1776901799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776901797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1778781375
 GameObject:
   m_ObjectHideFlags: 0
@@ -32020,7 +33286,7 @@ GameObject:
   - component: {fileID: 1818780298}
   - component: {fileID: 1818780297}
   - component: {fileID: 1818780299}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_care_tire_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32528,15 +33794,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.891
+      value: -10.877
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0625
+      value: 1.1446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.42
+      value: 6.437
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalRotation.x
@@ -32572,15 +33838,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2605
+      value: 1.1669072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2605
+      value: 1.1669072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2605
+      value: 1.1669072
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bbd09948a43317841ab056e2fa485451, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -33751,7 +35017,7 @@ GameObject:
   - component: {fileID: 1888696541}
   - component: {fileID: 1888696543}
   - component: {fileID: 1888696542}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_14_tire_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34112,7 +35378,7 @@ GameObject:
   - component: {fileID: 1917938219}
   - component: {fileID: 1917938221}
   - component: {fileID: 1917938220}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_car_mirror_holder_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34302,6 +35568,195 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1959497900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959497904}
+  - component: {fileID: 1959497903}
+  - component: {fileID: 1959497902}
+  - component: {fileID: 1959497901}
+  - component: {fileID: 1959497905}
+  m_Layer: 17
+  m_Name: car 5 audio trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1959497901
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959497900}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1959497902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959497900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff57b217dfb0b0448fb25ef681d0686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1959497905}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1959497903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959497900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1959497904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959497900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3494816, y: 1.1666908, z: 17.524897}
+  m_LocalScale: {x: 1.4508257, y: 1.4508257, z: 1.4508257}
+  m_Children: []
+  m_Father: {fileID: 625068723}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1959497905
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959497900}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0cb191e3bcc8a4c46b520cd4864ec2c2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1964550778
 GameObject:
   m_ObjectHideFlags: 0
@@ -34579,27 +36034,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.32941175
+      value: 0.39999998
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5642652
+      value: 0.6666666
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.85882354
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.minColor.r
-      value: 0.2912513
+      value: 0.38113207
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.minColor.g
-      value: 0.48568827
+      value: 0.6191582
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: InitialModule.startColor.minColor.b
-      value: 0.8018868
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: RotationModule.x.minMaxState
@@ -35092,7 +36547,7 @@ GameObject:
   - component: {fileID: 2024143294}
   - component: {fileID: 2024143296}
   - component: {fileID: 2024143295}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_headlight_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35254,7 +36709,7 @@ GameObject:
   - component: {fileID: 2027364017}
   - component: {fileID: 2027364019}
   - component: {fileID: 2027364018}
-  m_Layer: 18
+  m_Layer: 16
   m_Name: Car_16_side_mirror_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35847,7 +37302,7 @@ GameObject:
   - component: {fileID: 2064403643}
   - component: {fileID: 2064403645}
   - component: {fileID: 2064403644}
-  m_Layer: 18
+  m_Layer: 19
   m_Name: Giraffe_car_mirror_holder_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36088,6 +37543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095970111}
+  - component: {fileID: 2095970112}
   m_Layer: 18
   m_Name: Car_12_grp
   m_TagString: Untagged
@@ -36115,6 +37571,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2095970112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095970110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2101426186
 GameObject:
   m_ObjectHideFlags: 0
@@ -36124,6 +37593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101426187}
+  - component: {fileID: 2101426188}
   m_Layer: 18
   m_Name: Car_7_grp
   m_TagString: Untagged
@@ -36152,6 +37622,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2101426188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101426186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2101905415
 GameObject:
   m_ObjectHideFlags: 0
@@ -36242,6 +37725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103843794}
+  - component: {fileID: 2103843795}
   m_Layer: 18
   m_Name: Car_5_Grp
   m_TagString: Untagged
@@ -36271,6 +37755,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2103843795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103843793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2105615298
 GameObject:
   m_ObjectHideFlags: 0
@@ -36282,7 +37779,7 @@ GameObject:
   - component: {fileID: 2105615299}
   - component: {fileID: 2105615301}
   - component: {fileID: 2105615300}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tire_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36768,7 +38265,7 @@ GameObject:
   - component: {fileID: 2126696181}
   - component: {fileID: 2126696183}
   - component: {fileID: 2126696182}
-  m_Layer: 18
+  m_Layer: 17
   m_Name: Car_5_tire_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36928,6 +38425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2128787624}
+  - component: {fileID: 2128787625}
   m_Layer: 18
   m_Name: Car_1_Grp
   m_TagString: Untagged
@@ -36957,6 +38455,19 @@ Transform:
   m_Father: {fileID: 1644191852}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2128787625
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128787623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2132637051
 GameObject:
   m_ObjectHideFlags: 0
@@ -36968,7 +38479,7 @@ GameObject:
   - component: {fileID: 2132637052}
   - component: {fileID: 2132637054}
   - component: {fileID: 2132637053}
-  m_Layer: 18
+  m_Layer: 11
   m_Name: Car_15_tire_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

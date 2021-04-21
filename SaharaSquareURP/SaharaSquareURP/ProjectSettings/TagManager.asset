@@ -15,15 +15,15 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
+  - Giraffe car
+  - car 9
+  - car 15
   - Building 1
   - Building 9
   - Building 14 15
   - Background buildings
-  - 
-  - 
+  - car 14
+  - car 5
   - Cars
   - Giraffe Car
   - 
@@ -34,7 +34,7 @@ TagManager:
   - 
   - Palm Trees
   - 
-  - 
+  - CarTrigger
   - VFX
   - PostProcessing
   - Focused
